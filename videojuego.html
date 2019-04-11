@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../hojadevida/CSS/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../hojadevida/CSS/main.css">
+        <link rel="stylesheet" href="../hojadevida/CSS/all.min.css">
+        <link rel="stylesheet" type="text/css" href="../hojadevida/Fonts/style.css"/> 
+        <link rel="icon" type="image/png" href="../hojadevida/Img/FondoAC.png"/>  
+      <title>AndersonCalderonCardozo</title>    
+</head>
+<!--AQUI INICIA EL CUERPO DEL DOCUMENTO--> 
+<body class="" onload="game.init()">  
+    <div class="container-fluid">  
+        <header class="table-dark fixed-top">
+<!--AQUI INICIA LA BARRA DE HERRAMIENTAS-->            
+            <nav class="container-fluid navbar navbar-expand-md">
+                <div class=" navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu j-icono"></span>
+                    <a class="navbar-brand j-tit-ventana" href="">Menú</a>
+                </div>
+                    <div class="bodya collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="bodya navbar-nav">
+<!--Muestra el primer link devuelve a inicio-->                    
+                        <li class="nav-item active">
+                        <a class="nav-link j-menuIni ml-3 mr-3 "><span class="icon-home3 navbar-brand j-tit-ventana d-none d-md-block"></span></a>
+                          </li>
+<!--Muestra el segundo link datos de contacto-->                    
+                          <li class="nav-item dropdown ">
+                          <a class="nav-link j-menu btn-outline-warning" href="../hojadevida/index.html">
+                            Datos Principales <span class="icon-user-tie"></span></a>    
+                          </li> 
+<!--Muestra el segundo link datos de Informacion Academica-->                                 
+                            <li class="nav-item dropdown">
+                        <a class="nav-link j-menu btn-outline-danger" href="../hojadevida/informacionAcademica.html">
+                          Informacion Academica <span class="icon-library"></span></a>
+                          </li>
+<!--Muestra el segundo link datos de Informacion Laboral-->                                 
+                            <li class="nav-item dropdown">
+                          <a class="nav-link j-menu btn-outline-success" href="../hojadevida/informacionLaboral.html">
+                          Informacion Laboral <span class="icon-coin-dollar"></span></a>    
+                        </li>
+<!--Muestra el segundo link datos de Informacion Proyectos-->                                 
+                          <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  btn-outline-primary  j-menu" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              PROYECTOS <span class="icon-dice"></span></a>
+                                            <div class="dropdown-menu">
+                                                <a href="https://1drv.ms/f/s!Ak4s90BqGfT5iLxaqHKerXVzUYqmaQ" class="dropdown-item">OneDrive <i class="fas fa-cloud-download-alt"></i></a>
+                                                <a href="https://github.com/andersoncardozo" class="dropdown-item">GifHub <i class="fab fa-github"></i></a>
+                                                <a href="https://aprograma.blogspot.com/" class="dropdown-item">@PROGRAMAR <i class="fab fa-blogger"></i></a>
+                                            </div>
+                                </li>
+<!--Muestra el segundo link datos de Informacion Otras opciones-->          
+                          <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  btn-outline-warning j-menu" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Más Opciones </a>
+                                            <div class="dropdown-menu">
+                                                <a href="videojuego.html" class="dropdown-item">Jugar en Marte</a>
+                                                <a class="nav-link dropdown-toggle  btn-outline-secondary j-menu" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;&nbsp;&nbsp;Cambiar Tema</a>
+<!--Inicio del cudro que muestras las opciones de cambio de tema-->                               
+                                                    <div class="dropdown-menu">
+                                                        <div style="scrollbar-face-color:#ff9900; overflow:scroll; border-left-style:outset; height:341.353pt;" align=right>
+                                                            <button class="bodya jumbotron jumbotron-fluid botonTamaño" data-fondo="bodya"><font color="white">CONEXION</font></button><br>
+                                                            <button class="bodyb jumbotron jumbotron-fluid botonTamaño" data-fondo="bodyb"><font color="white">GATO</font></button><br>
+                                                            <button class="bodyc jumbotron jumbotron-fluid botonTamaño" data-fondo="bodyc"><font color="white">CONEXION</font></button><br>
+                                                            <button class="bodyd jumbotron jumbotron-fluid botonTamaño" data-fondo="bodyd"><font color="white">MAPA</font></button><br>
+                                                            <button class="bodye jumbotron jumbotron-fluid botonTamaño" data-fondo="bodye"><font color="white">NATURA</font></button><br>
+                                                            <button class="bodyf jumbotron jumbotron-fluid botonTamaño" data-fondo="bodyf"><font color="white">PAISAJE</font></button><br>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                </li>
+<!--Muestra el segundo link datos de Ayuda-->
+                    <li class="nav-item active">
+                        <a class="nav-link j-menuIni  mr-3" href="../hojadevida/adsi.html"> 
+                                         Que es ADSI <span class=" icon-question"></span></a>
+                                </li>
+<!--Muestra el segundo link datos de Informacion Otras opciones-->
+                    </ul>
+                  </div>
+            </nav>
+        </header> 
+        <br>
+</div>        
+<!--PRIMER DIVISION-->
+<div class=" container juegogalaxia">
+<!-- Start Button (Bootstrap) -->
+  <form  class="">   <!--JUEGO embeded-->
+     <div class="row" >
+          <div class="col-lg-8  col-sm-12 d-none d-md-block">
+             <canvas id="canvas" width="700" height="650">TU NAVEGADOR NO SOPORTA HTML5!</canvas>
+          </div>
+    <div class="col-lg-4">
+      <h4 class="">MEJORES PUNTUACIONES</h4>
+           <div class="col-lg-2">
+             <table  class="table-dark  table table-bordered" >
+             <td id="puntuaciones"></td>
+            </table>
+           </div>
+           <div class="col-lg-2 d-none d-md-block">
+            <button type="submit" class="btn btn-success btn-lg disabled" data-toggle="button" aria-pressed="false" onclick = "location.reload()">Jugar <i class="fas fa-play-circle"></i>
+          </button>
+           </div>
+           <div class="col-lg-2 d-md-none d-block">
+            <button type="submit" class="btn btn-success btn-lg disabled" data-toggle="button" aria-pressed="false" onclick = "window.location='juegomovil.html'">ir al juego <i class="fas fa-play-circle"></i>
+          </button>
+           </div>
+            
+            
+          
+          </div>
+     </div>
+
+       
+        <!-- End -->
+  </form>
+
+<!--SE INICIA EL FOOTER-->
+</div>
+ <br>
+<br>
+<footer class="">
+    <div class=" container-fluid text-right  j-footer p-4" >
+    <h6>Anderson Calderon Cardozo </h6>
+            <div class="container-fluid">
+                <div class="row justify-content-end" >
+                    <div class="col-md-6 col-lg-4 col-xl-3 ml-4 mr-4">
+                        <div class="row justify-content-end text-center" id="icoRedSocial" >                      
+                            <div class="col-md-2 col-lg-2 p-1 bg-info"> 
+                                <a href ="https://www.facebook.com/andersonCalderonC"><div class="icon-facebook container-fluid p-1"></div> </a>
+                            </div>
+                            <div class="col-md-2 col-lg-2 p-1 bg-primary">
+                                <a href ="https://m.me/andersonCalderonC"><div class=""><i class="fab fa-facebook-messenger"></i></div></a>
+                            </div>          
+                            <div class="col-md-2 col-lg-2 p-1 bg-success">
+                                <a href="https://api.whatsapp.com/send?phone=573114898764"><div class="icon-whatsapp container-fluid p-1"></div></a>
+                            </div>
+                            <div class="col-md-2 col-lg-2 p-1 bg-warning"> 
+                                 <a href ="mailto:darpana2009@hotmail.com"><div class="icon-envelop container-fluid p-1"></div> </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <p>2018  Versión  0.1</p>           
+    </div>  
+</footer>      
+<!--SE INICIA JS--> 
+<script src="../hojadevida/js/videojuego.js" type="text/javascript"></script>             
+<script src="../hojadevida/js/bootstrap/jquery.js"></script> <!-- jquery primero -->
+        <script src="../hojadevida/js/bootstrap/popper.min.js"></script> <!-- popper segundo -->
+        <script src="../hojadevida/js/bootstrap/bootstrap.min.js"></script> <!-- js Boostrap -->
+        <script src="../hojadevida/js/all.min.js"></script> <!-- archivo personalizado -->
+        <script src="../hojadevida/js/main.js"></script> <!-- archivo personalizado -->
+   
+    <script>
+//codigo jquery para cambiar los temas
+$(function()
+{
+    var $body = $('body');
+    $body.find('button').on('click', function()
+    {
+    var boton = $(this);  
+    var claseAaplicar = boton.data('fondo');
+    aplicarClase(claseAaplicar);
+    });
+    function aplicarClase(unaClase)
+    {
+      $body.removeClass();
+      $body.addClass(unaClase);
+    }
+    //inicalizador
+    aplicarClase('bodyb');
+});
+        </script>    
+</body>
+</html>
